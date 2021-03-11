@@ -7,11 +7,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return new MaterialApp(
       title: 'Flutter Demo',
-      color: Colors.deepOrange,
       theme: new ThemeData(
-        primarySwatch: Colors.grey[300],
+        primarySwatch: Colors.green,
       ),
-      home: new MyHomePage(title: 'Calculator'),
+      home: new MyHomePage(title:'Calculator'),
+
     );
   }
 }
@@ -20,6 +20,7 @@ class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
 
   final String title;
+
 
   @override
   _MyHomePageState createState() => new _MyHomePageState();
